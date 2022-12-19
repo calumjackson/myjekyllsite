@@ -106,6 +106,21 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _architecture
+  - scope:
+      path: "_architecture"
+    values:
+      layout: single
+      sidebar:
+        nav: architecture
+
+collections:
+  architecture:
+    output: true
+    permalink: /:collection/:path
+  posts:
+    output: true
+
 
 category_archive:
   type: liquid
